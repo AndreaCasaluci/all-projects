@@ -84,13 +84,14 @@ body{
     padding-bottom: 35px;
     padding-top:35px;
     gap:20px;
+    border:5px solid var(--acquamarine);
     
 }
 
 .list .project{
     flex:1;
     background: var(--acquamarine);
-    color: var(--blue);
+    color:#0e4686;
     font-size: 25px;
     border-radius: 8px;
     width:75%;
@@ -108,8 +109,11 @@ body{
 .list .project:hover{
     background: var(--light-acquamarine);
     color: var(--light-blue);
-    font-size: 30px;
-    padding-bottom: 20px;
-    border:2px solid var(--light-blue);
-    transform: scale(1.1);
+    font-size: 25px;
+   /* padding-bottom: 20px;
+    border:2px solid var(--light-blue);*/
+}
+
+.container .list:hover{
+    border:5px solid var(--light-acquamarine);
 }
