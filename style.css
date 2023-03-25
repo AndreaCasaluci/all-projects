@@ -1,0 +1,113 @@
+:root{
+  /*
+    --blue: #071a52; /*Darkest*/
+  /*  --acquamarine: #086972; /*Second Darkest*/
+  /*  --green: #17b978; /*Second Brighter;*/
+  /*  --light-green: #a7ff83; /*Brightest*/
+
+  --blue: #071e3d; /*Darkest*/
+  --light-blue: #1f4287; /*Second Darkest*/
+  --acquamarine: #34c0e0; /*Second Brighter;*/
+  --light-acquamarine: #21e6c1; /*Brightest*/
+ 
+}
+
+@font-face {
+    font-family: 'figrabold';
+    src: url('figra-webfont.woff2') format('woff2'),
+         url('figra-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+    font-family: 'figrabold', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    color:var(--light-acquamarine);
+    font-size: 80px;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-around;
+    padding:5%;
+    padding-top:15%;
+    gap:20px;
+    
+}
+.container .phrases{
+    width: 50%;
+  /*  margin-top: 20%;*/
+    display: flex;
+    flex-direction: column;
+}
+.phrases .title{
+    flex: 1;
+    position: relative;
+    color:var(--light-acquamarine);
+    font-size: 100px;
+}
+.phrases .subtitle{
+    margin-top:10px;
+    flex: 1;
+    position: relative;
+    color: var(--acquamarine);
+    font-size: 25px;
+}
+
+.container .list{
+  /*  margin-top:20%;*/
+    width: 50%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    border-radius: 8px;
+    padding-bottom: 35px;
+    padding-top:35px;
+    gap:20px;
+    
+}
+
+.list .project{
+    flex:1;
+    background: var(--acquamarine);
+    color: var(--blue);
+    font-size: 25px;
+    border-radius: 8px;
+    width:75%;
+    padding:10px;
+    padding-top: 15px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+}
+.list .project a{
+    text-decoration: none;
+    color:inherit;
+}
+
+.list .project:hover{
+    background: var(--light-acquamarine);
+    color: var(--light-blue);
+    font-size: 30px;
+    padding-bottom: 20px;
+    border:2px solid var(--light-blue);
+    transform: scale(1.1);
+}
